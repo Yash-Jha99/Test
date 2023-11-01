@@ -36,3 +36,17 @@ for index, item in enumerate(data):
 # del dat["nan"]
 
 print(json.dumps(list))
+
+  def get_data(data_dict, keys_arr, fallback_value):
+    try:
+        for index, key in enumerate(keys_arr):
+            if index == 0:
+                value = data_dict[key]
+            else:
+                value = value[key]
+
+        return value
+
+    except:
+        return fallback_value
+  
