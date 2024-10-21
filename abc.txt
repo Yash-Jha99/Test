@@ -1,1 +1,2 @@
-Test Upload Succesfull
+PINECONE_INDEX_NAME = "financial-documents"
+COMBINED_RAG_MODEL = "ft-abc"
